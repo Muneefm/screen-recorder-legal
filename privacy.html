@@ -25,9 +25,9 @@
 <body>
 <main>
 <h1>Privacy Policy</h1>
-<p class="updated">Screen Recorder – AI Ready for Mac · Last updated 5 October 2026</p>
+<p class="updated">Screen Recorder – AI Ready for Mac · Last updated 14 October 2026</p>
 
-<p class="summary"><strong>In short:</strong> Screen Recorder does not collect or share any personal information. Your recordings stay on your Mac. The app has no accounts, no ads, no analytics and no tracking, and it does not send anything over the internet. The only exception is a problem report, and only if you choose to email it to us yourself (see Problem reports below).</p>
+<p class="summary"><strong>In short:</strong> Screen Recorder does not collect or share any personal information. Your recordings, your edits and the videos you export stay on your Mac, and captions are made on your Mac too. The app has no accounts, no ads, no analytics and no tracking, and it does not send anything over the internet. The only exception is a problem report, and only if you choose to email it to us yourself (see Problem reports below).</p>
 
 <h2>Who we are</h2>
 <p>Screen Recorder – AI Ready (“the app”) is made by NEX APP STUDIO LLC (“we”, “us”). If you have a question about this policy, email us at <a href="mailto:screenrecorderappmac@gmail.com">screenrecorderappmac@gmail.com</a>.</p>
@@ -36,16 +36,22 @@
 <ul>
   <li><strong>Your recordings</strong> are saved as video files in the folder you choose (Movies › Recordings unless you pick another folder). We never receive them.</li>
   <li><strong>Small information files</strong> are kept next to each recording, for example its length, picture size and which screen, window or area was recorded. The app uses them to check and recover recordings. They stay in your recordings folder.</li>
-  <li><strong>Your settings</strong>, such as the save folder, appearance, audio choices and whether the window stays on top, are kept in the app’s own storage on your Mac.</li>
+  <li><strong>Your edits.</strong> When you edit a recording, the app saves your changes in an edit file: cuts, zooms, text, blurred areas, styles, and captions with the words recognized from the recording’s sound. For a recording saved as one video file, the edit file is kept in the app’s own folder. For a recording saved as a folder, it is kept inside that folder.</li>
+  <li><strong>Pictures and music you add</strong> to an edit are copied into the app’s own folder, so the edit keeps working if you move or delete the original.</li>
+  <li><strong>Cleaned-up voice.</strong> When you turn on Remove background noise, the app keeps the cleaned sound in the app’s own folder so it doesn’t have to clean it again.</li>
+  <li><strong>Edited videos</strong> you export (MP4 or GIF, plus a subtitle file when the video has captions) are saved next to the original recording, or in a folder you choose.</li>
+  <li><strong>Your settings</strong>, such as the save folder, appearance, audio choices, export choices and whether the window stays on top, are kept in the app’s own storage on your Mac.</li>
   <li><strong>Screen previews</strong> shown inside the app are made on your Mac, kept only in memory and never saved or sent anywhere.</li>
 </ul>
+<p>The app’s own folder is on your Mac at <code>~/Library/Containers/app.mac.screenrecorder</code>. Nothing in it is sent to us or anyone else.</p>
 
 <h2>Permissions the app asks for</h2>
 <ul>
   <li><strong>Screen &amp; System Audio Recording</strong> lets the app record your screen, one window or an area you choose, and the Mac’s sound if you turn that on. The app records only when you press Start, or when an AI assistant you connected starts a recording (see below).</li>
   <li><strong>Microphone</strong> is used only if you turn the microphone on. “Test microphone” listens only while the test runs and saves nothing.</li>
   <li><strong>Camera</strong> is used only if you turn the camera on. The camera picture appears in a bubble on your screen and is recorded into your video on your Mac; it is never sent anywhere.</li>
-  <li><strong>Folder access</strong> covers only the folder you choose for your recordings.</li>
+  <li><strong>Speech recognition</strong> is used only when you choose Create Captions in the editor. Apple’s speech recognition turns the recording’s speech into text on your Mac. The app never uses Apple’s online speech recognition, and no audio or text leaves your Mac. The first time you make captions in a language, macOS may download Apple’s speech model for it; that download contains none of your audio.</li>
+  <li><strong>Files and folders</strong>: the app can use only the folder you choose for your recordings and the files you pick yourself, such as a video to edit, a picture or a song.</li>
 </ul>
 <p>You can turn these permissions off at any time in System Settings › Privacy &amp; Security.</p>
 
@@ -55,11 +61,13 @@
 <p>The app itself never sends your recordings anywhere. An assistant, however, may be able to open a saved recording and may send information to its own online service. What an assistant does with information is covered by that assistant’s own privacy policy.</p>
 
 <h2>Keeping, deleting and changing your choices</h2>
-<p>Your recordings stay in the folder you chose until you delete them. Deleting a recording in Finder deletes it; we have no copy. The app’s settings stay on your Mac until you remove the app.</p>
-<p>You can withdraw access at any time: turn off screen recording, microphone or camera access for Screen Recorder in System Settings → Privacy &amp; Security, and turn off <strong>Allow local automation</strong> in the app’s Settings to stop AI assistants from using it.</p>
+<p>Your recordings and edited videos stay where they were saved until you delete them. Deleting a recording in Finder deletes it; we have no copy.</p>
+<p>Edit files, and the copies of pictures, music and cleaned-up voice that the editor makes, stay on your Mac until you delete them. Deleting a recording does not delete them. To remove them, quit the app, choose Go › Go to Folder in Finder, enter <code>~/Library/Containers/app.mac.screenrecorder/Data/Library/Application Support/app.mac.screenrecorder</code>, and move the Presentations, Backgrounds, Music or Cleaned Voice folder to the Trash. An edit kept inside a recording folder is the file presentation.json in that folder.</p>
+<p>The app’s settings stay on your Mac until you remove them. Moving the app to the Trash does not remove the app’s own folder; to remove everything, also move <code>~/Library/Containers/app.mac.screenrecorder</code> to the Trash.</p>
+<p>You can withdraw access at any time: turn off screen recording, microphone, camera or speech recognition access for Screen Recorder in System Settings → Privacy &amp; Security, and turn off <strong>Allow local automation</strong> in the app’s Settings to stop AI assistants from using it.</p>
 
 <h2>Problem reports (optional)</h2>
-<p>The app keeps a small activity log on your Mac to help fix problems. It contains no recordings, screen content, window titles or file names. It can include the names of the microphones and cameras you use, as shown in System Settings. Nothing is sent automatically: only if you choose Help › Report a Problem and then email the report to us yourself do we receive it, along with your Mac model, macOS version and any crash reports it includes. We use it only to fix the problem and delete it when we no longer need it.</p>
+<p>The app keeps a small activity log on your Mac to help fix problems. It contains no recordings, screen content, window titles, file names, captions or edits. Microphones and cameras are referred to by a short code, not by their names. Nothing is sent automatically: only if you choose Help › Report a Problem and then email the report to us yourself do we receive it, along with your Mac model, macOS version and any crash reports it includes. We use it only to fix the problem and delete it when we no longer need it.</p>
 
 <h2>Information Apple may share with us</h2>
 <p>If you choose to share analytics with app developers (System Settings › Privacy &amp; Security › Analytics &amp; Improvements), Apple may share crash reports and basic usage statistics with us. We use them only to find and fix problems. Apple’s privacy policy explains how Apple collects this information.</p>
